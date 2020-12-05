@@ -654,7 +654,9 @@ def load_data():
 	data['prism'] = [ee.ImageCollection("OREGONSTATE/PRISM/AN81m"), "ppt", 1, 4000]
 	data['chirps'] = [ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD'), "precipitation", 1, 5500]
 	data['persiann'] = [ee.ImageCollection("NOAA/PERSIANN-CDR"), "precipitation", 1, 25000]
-	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1, 4000]
+	data['dmet'] = [ee.ImageCollection('NASA/ORNL/DAYMET_V3'), "prcp", 1, 1000]
+
+	data['prism_d'] = [ee.ImageCollection("OREGONSTATE/PRISM/AN81d"), 'ppt', 1, 4000]
 
 	#################### 
 	##### SWE data #####
